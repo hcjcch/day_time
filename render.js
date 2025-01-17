@@ -34,6 +34,7 @@ function drawFlag() {
     const now = new Date();
     const currentIntervals = Math.floor((now.getHours() * 60 + now.getMinutes()) / 3);
     const getOffWorkIndex = Math.floor(19 * 60 / 3);
+    const launchIndex = Math.floor(12 * 60 / 3);
     window.electronAPI.updateSize({ rows, cols, cellHeight, cellWidth, width, height });
 
     // Draw the grid
@@ -50,6 +51,9 @@ function drawFlag() {
             }
             if (cellIndex === getOffWorkIndex) {
                 ctx.fillStyle = '#FF2181';
+            }
+            if (cellIndex === launchIndex) {
+                ctx.fillStyle = '#FFA500';
             }
             ctx.fillRect(x, y, cellWidth, cellHeight);
         }
