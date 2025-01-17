@@ -6,3 +6,10 @@
 ## TODO
 - [ ] 编辑特殊时间点
 - [ ] 点击特殊时间点，弹出时间点描述和 TODOList 列表
+
+## Build
+- npm install
+- npm start
+
+## package
+- npm run make
