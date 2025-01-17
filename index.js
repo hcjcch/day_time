@@ -9,6 +9,7 @@ const createWindow = () => {
     transparent: true,
     resizable: false,
     draggable: true,
+    alwaysOnTop: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
